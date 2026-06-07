@@ -1,0 +1,24 @@
+s = {"kira":96,"chaiyho":98,"kenya":97}
+
+print(s)
+
+high = max(s, key=s.get)
+low = min(s, key=s.get)
+
+print("The student with the highest marks:",high)
+print("The student with the lowest marks:",low)
+
+sum = 0
+
+for k,v in s.items():
+    sum += v
+
+
+
+
+print("The average marks:",sum/len(s))
+
+s.update({"semol":46})
+s.pop("kenya")
+print(s)
+
